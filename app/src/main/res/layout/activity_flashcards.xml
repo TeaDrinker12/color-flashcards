@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlashcardsActivity">
+
+    <TextView
+        android:id="@+id/color_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color Name"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_height"
+        android:layout_margin="@dimen/image_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/parrot" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#1A237E"
+        android:fontFamily="sans-serif-black"
+        android:paddingVertical="@dimen/button_padding"
+        android:text="Button 1"
+        android:textSize="17sp"
+        app:cornerRadius="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1A237E"
+        android:fontFamily="sans-serif-black"
+        android:paddingVertical="@dimen/button_padding"
+        android:text="Button 2"
+        android:textSize="17sp"
+        app:cornerRadius="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toTopOf="@+id/button1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1A237E"
+        android:fontFamily="sans-serif-black"
+        android:paddingVertical="@dimen/button_padding"
+        android:text="Button 3"
+        android:textSize="17sp"
+        app:cornerRadius="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/button1"
+        app:layout_constraintStart_toStartOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1A237E"
+        android:fontFamily="sans-serif-black"
+        android:paddingVertical="@dimen/button_padding"
+        android:text="Button 4"
+        android:textSize="17sp"
+        app:cornerRadius="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

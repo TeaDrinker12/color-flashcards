@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_padding">20dp</dimen>
+    <dimen name="image_margin">10dp</dimen>
+    <dimen name="image_height">250dp</dimen>
+    <dimen name="score_size">170dp</dimen>
+</resources>

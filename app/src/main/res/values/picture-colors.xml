@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="color_names">
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Violet</item>
+    </string-array>
+
+    <array name="Red">
+        <item>parrot</item>
+        <item>raspberry</item>
+        <item>rose</item>
+        <item>tomatoes</item>
+        <item>pomegranate</item>
+        <item>red_berries</item>
+    </array>
+    <array name="Orange">
+        <item>darwin</item>
+        <item>carrot_plush</item>
+        <item>maple_leaf</item>
+        <item>orange_lily</item>
+        <item>bearded_dragon</item>
+        <item>cat</item>
+        <item>monkey</item>
+        <item>squirrel</item>
+    </array>
+    <array name="Yellow">
+        <item>pikachu</item>
+        <item>frog</item>
+        <item>honeycomb</item>
+        <item>yellow_warbler</item>
+        <item>cockatiel_parrot</item>
+        <item>dahlia</item>
+        <item>bananas</item>
+        <item>lemons</item>
+    </array>
+    <array name="Green">
+        <item>leaf</item>
+        <item>tree_python</item>
+        <item>glass_frog</item>
+        <item>mantis</item>
+        <item>iguana</item>
+        <item>boomslang</item>
+        <item>grapes</item>
+        <item>parsley</item>
+        <item>aloe_vera</item>
+    </array>
+    <array name="Blue">
+        <item>gumball</item>
+        <item>ocean</item>
+        <item>sky</item>
+        <item>hyacinth_macaw</item>
+        <item>mountain_bluebird</item>
+        <item>blueberries</item>
+    </array>
+    <array name="Violet">
+        <item>umbrella</item>
+        <item>starry_night</item>
+        <item>lavender</item>
+        <item>honeycreeper</item>
+        <item>hummingbird</item>
+        <item>carrots</item>
+    </array>
+</resources>
