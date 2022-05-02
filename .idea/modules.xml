@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Color_Assignment.iml" filepath="$PROJECT_DIR$/.idea/modules/Color_Assignment.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Color_Assignment.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Color_Assignment.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Color_Flashcards.iml" filepath="$PROJECT_DIR$/.idea/modules/Color_Flashcards.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Color_Flashcards.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Color_Flashcards.app.iml" />
     </modules>
   </component>
 </project>

@@ -7,7 +7,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.example.colorassignment"
+        applicationId "com.example.colorflashcards"
         minSdk 27
         targetSdk 31
         versionCode 1

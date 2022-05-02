@@ -1,4 +1,4 @@
-package com.example.colorassignment
+package com.example.colorflashcards
 
 import org.junit.Test
 

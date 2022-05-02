@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.colorassignment">
+    package="com.example.colorflashcards">
 
     <application
         android:allowBackup="true"
@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ColorAssignment">
         <activity
-            android:name=".ScoreActivity"
+            android:name="com.example.colorflashcards.ScoreActivity"
             android:exported="false" />
         <activity
-            android:name=".FlashcardsActivity"
+            android:name="com.example.colorflashcards.FlashcardsActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.colorflashcards.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
