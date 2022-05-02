@@ -3,7 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_flashcards.xml" value="0.25376871043238136" />
+        <entry key="app/src/main/res/layout/activity_flashcards.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.29656993724681713" />
         <entry key="app/src/main/res/layout/activity_score.xml" value="0.34750671386718757" />
       </map>
