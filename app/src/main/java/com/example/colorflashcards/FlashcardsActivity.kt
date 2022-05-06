@@ -2,7 +2,6 @@ package com.example.colorflashcards
 
 import android.content.Intent
 import android.media.MediaPlayer
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.View
@@ -11,9 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
 
-const val DEBUG_MODE = false
-
-class FlashcardsActivity : AppCompatActivity() {
+class FlashcardsActivity : CFActivity() {
     val colors by lazy { resources.getStringArray(R.array.color_names).toList() }
     val colorTextView by lazy { findViewById<TextView>(R.id.color_name_text) }
     val timerTextView by lazy { findViewById<TextView>(R.id.timer_text) }
@@ -32,6 +29,15 @@ class FlashcardsActivity : AppCompatActivity() {
         val array = resources.getStringArray(resId)
         array.map { it.toString() }
     }).toTypedArray())
+    }
+
+    val stringsForColors by lazy {
+        mapOf(*colors.zip(colors.map { color ->
+            val stringId = color.lowercase()
+            val resId = resources.getIdentifier(stringId, "string", packageName)
+            val string = resources.getString(resId)
+            string.toString()
+        }).toTypedArray())
     }
 
     var score = 0
@@ -56,7 +62,7 @@ class FlashcardsActivity : AppCompatActivity() {
 
         buttons.forEach { button ->
             button.setOnClickListener {
-                if (button.text == currentColor) {
+                if (button.text == stringsForColors[currentColor]) {
                     onCorrectAnswer()
                 } else {
                     onLose()
@@ -66,11 +72,11 @@ class FlashcardsActivity : AppCompatActivity() {
 
         countdown = object: CountDownTimer(5000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
-                timerTextView.setText((millisUntilFinished / 1000 + 1).toString())
+                timerTextView.setText(localizedNumber(millisUntilFinished / 1000 + 1))
             }
 
             override fun onFinish() {
-                timerTextView.setText(0.toString())
+                timerTextView.setText(localizedNumber(0))
                 onLose()
             }
         }
@@ -137,7 +143,7 @@ class FlashcardsActivity : AppCompatActivity() {
         withActualColor.zip(buttons).forEach {
             val colorName = it.first
             val button = it.second
-            button.setText(colorName)
+            button.setText(stringsForColors[colorName])
         }
     }
 }

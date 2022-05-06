@@ -5,13 +5,16 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 
-class ScoreActivity : AppCompatActivity() {
+class ScoreActivity : CFActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_score)
+    }
 
-        val score = intent.extras?.getInt("score")
-        findViewById<TextView>(R.id.score_text).setText(score.toString())
+    override fun onResume() {
+        super.onResume()
+        val score = intent.extras?.getInt("score") ?: 0
+        findViewById<TextView>(R.id.score_text).setText(localizedNumber(score))
 
         findViewById<Button>(R.id.play_again).setOnClickListener {
             finish()

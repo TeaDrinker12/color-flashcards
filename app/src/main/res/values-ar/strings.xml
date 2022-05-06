@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">لعبة الألوان</string>
+    <string name="start">ابدأ</string>
+    <string name="red">أحمر</string>
+    <string name="orange">برتقالي</string>
+    <string name="yellow">أصفر</string>
+    <string name="green">أخضر</string>
+    <string name="blue">أزرق</string>
+    <string name="violet">بنفسجي</string>
+    <string name="score">النتيجة</string>
+    <string name="start_again">ابدأ من جديد</string>
+</resources>
